@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Play&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Play&family=Proza+Libre&family=Roboto+Slab:wght@400;500&display=swap');
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Comic Neue', cursive;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Proza Libre', sans-serif;
+//font-family: 'Play', sans-serif;
+.nav-bar
+{
+    // background: rgb(0,226,255);
+    // background: linear-gradient(90deg, rgba(0,226,255,1) 20%, rgba(40,143,229,1) 49%, rgba(14,65,109,1) 73%);
+    background: rgb(4, 154, 154);
+// background: linear-gradient(90deg, rgba(89,96,99,1) 20%, rgba(42,45,48,1) 67%);
+    width: 120px ;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 3;
+    min-height: 500px;
+    box-shadow: 5px 0 20px 0 rgb(4, 12, 13);
+
+    .logo
+    {
+        display: block;
+        padding: 5px 0;
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+
+        img{
+            display: block;
+            margin: 5px auto;
+            width: 100px;
+            border-radius: 50px;
+            height: auto;
+            
+        }
+        //image logo styling
+        p
+        {
+            text-decoration: none;
+            // font-family: 'Pacifico', cursive;
+            font-family: 'Play', sans-serif;
+            font-weight: 1000;
+            text-align: center;
+            font-size: 16px;
+            
+            // background-color: rgb(0, 0, 0);
+            padding: 0 2px;
+            color: rgb(255, 255, 255);
+            
+        }
+        // h6
+        // {
+        //     font-family: 'Play', sans-serif;
+        //     font-weight: 500;
+        //     text-align: center;
+        //     font-size: 10px;
+            
+        //     // background-color: rgb(0, 0, 0);
+        //     padding: 0 2px;
+        //     color: rgb(255, 255, 255);
+        // }
+    }
+    
+
+    //inside div but in nav section
+    nav
+    {  
+         display: block;
+        text-align: center;
+        // position: absolute;
+        height: 50px;
+        top: 50%;
+        margin-top: 0px;
+        width: 100%;
+        // background-color: aquamarine;
+
+        a
+        {
+            font-size: 22px;
+            display: block;
+            line-height: 70px;
+            height: 70px;
+            position:relative ;
+            text-decoration: none;
+            // z-index: 4;
+            // background-color: antiquewhite;
+
+            i
+            {
+                transition: all 0.3s ease-out;
+            }
+            &:hover
+            {
+                color: #022c43;;
+                font-family: 'Comfortaa', cursive;
+                font-weight: 800;
+                svg
+                {
+                    opacity: 0;
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+
+            &::after{
+                content:'' ;
+                font-size: 12px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child
+            {
+                &::after
+                {
+                    content: 'HOME';
+                }
+            }
+           
+        }
+        a.about-link
+        {
+            &:after
+            {
+                content: 'ABOUT';
+            }
+        }
+
+        a.contact-link
+        {
+            &:after
+            {
+                content: 'CONTACT';
+            }
+        }
+        a.skills-link
+        {
+            &:after
+            {
+                content: 'SKILLS';
+            }
+        }
+        a.active 
+        {
+            svg
+            {
+                color: #ffffff;
+            }
+        }
+    }
+    ul 
+    {
+        position: absolute;
+        bottom: 0px;
+        height: 130px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        background-color: rgb(171, 255, 255);
+
+        li 
+        {
+            
+            a
+            {
+                padding: 15px 0;
+                display: block;
+                font-size: 22px;
+                color: black;
+                line-height: 20px;
+            }
+            &:hover svg
+            {
+                // color: rgb(4, 154, 154);
+                color: black;
+            }
+
+        }
+    }
+
+}

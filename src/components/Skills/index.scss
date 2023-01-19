@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Play&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Play&family=Proza+Libre&family=Roboto+Slab:wght@400;500&display=swap');
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Comic Neue', cursive;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Proza Libre', sans-serif;
+//font-family: 'Play', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comic+Neue:ital,wght@0,300;0,700;1,400;1,700&family=Pacifico&family=Play&family=Proza+Libre&family=Roboto+Slab:wght@400;500&display=swap');
+.skills-page
+{ 
+    animation: fadeIn 4s ;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+    // background-color: aqua;
+    // display: flex;
+    // flex-direction: column;
+    // .text1 
+    // {
+    //     float: left;
+    // }
+    .text2 
+    {
+        left: 60%;
+         // background-color: red;
+        
+         position: absolute;
+         top:45%;
+         transform: translateY(-50%);
+         width: 30%;
+         vertical-align: middle;
+         display: table-cell;
+         max-height: 100%;
+         
+ 
+ 
+         h1 
+         {
+             font-size: 30px;
+             font-family:'Coolvetica';
+             color: white;
+             font-weight: 400;
+             margin-top: 0;
+             position: relative;
+             margin-bottom: 40px;
+             left: 10px;
+             // opacity: 0;
+             
+             
+         }
+         &::before 
+         {
+             content: '<h1>';
+             font-family: 'La Belle Aurore';
+             font-size: 20px;
+             position: absolute;
+             margin-top: -10px;
+             left: -10px;
+             opacity: 0.6;
+             color: aqua;
+             line-height: 18px;
+             animation: fadeIn 2s 2s;
+             animation-fill-mode: forwards;
+             opacity: 0;
+ 
+         }
+         &::after 
+         {
+             content: '<h1>';
+             font-family: 'La Belle Aurore';
+             font-size: 20px;
+             position: absolute;
+             margin-top: -10px;
+             left: -30px;
+             bottom:385px;
+             margin-left: 20px;
+             opacity: 0.6;
+             color: aqua;
+             line-height: 18px;
+             animation: fadeIn 2s 2s;
+             animation-fill-mode: forwards;
+             opacity: 0;
+         }
+         .para{
+             font-size: 13px;
+             color: aqua;
+             opacity: 0;
+             font-family: 'Comfortaa', cursive;
+             font-weight: 300;
+             min-width: fit-content;
+             animation: fadeInUp 2s 2s;
+             animation-fill-mode: forwards;
+             // opacity: 0;
+         }
+ 
+ 
+         .flip-card
+         {
+             // background-color: yellow;
+             left: 0;
+             width: 100%;
+             padding: 0;
+             margin: 0;
+             height: 350px;
+             margin-bottom: 10px;
+             
+             display: flex;
+             border: 1px solid aqua;
+             border-radius: 20px;
+             box-shadow: 5px 0 20px 0 aqua;
+             // justify-content: space-around;
+             .flip-card-inner {
+                 // background-color: red;
+                 position: relative;
+                 width: 100%;
+                 height: 100%;
+                 // text-align: center;
+                //  transition: transform 0.8s;
+                //  transform-style: preserve-3d;
+                 .flip-card-front, .flip-card-back {
+                     position: absolute;
+                     width: 100%;
+                     height: 100%;
+                     -webkit-backface-visibility: hidden; /* Safari */
+                     backface-visibility: hidden;
+                   }
+ 
+                   .flip-card-front {
+                    // background-color: aquamarine;
+                    // position: absolute;
+                    position: relative;
+                     ul 
+                     {
+                         // background-color: blue;
+                         // justify-content: space-around;
+                         position: absolute;
+                         width: 90%;
+                         
+                         overflow: hidden;
+                         padding-top: 5px;
+                         padding-left: 20px;
+                        //  margin-top: 20px;
+                        // background-color: yellow;
+                        
+                         
+             
+                         li 
+                         {
+                             list-style: none;
+                             font-family: 'Comfortaa', cursive;
+                             color: white;
+                             width: 100%;
+                            //  justify-content: space-between;
+                             font-size: 12px;
+                            //  background-color: beige;
+                             
+             
+                             // font-family: 'Comic Neue', cursive;
+                             // font-family: 'Pacifico', cursive;
+                             // font-family: 'Proza Libre', sans-serif;
+                             //font-family: 'Play', sans-serif;
+                             a 
+                             {
+                                text-decoration: none;
+                                background-color: transparent;
+                                color: aqua;
+                                border: 1px solid aqua;
+                                padding: 4px;
+                                width: 100%;
+                                // margin-bottom: 2px;
+                                border-radius: 2px;
+                                box-shadow: 0px 0 5px 0 white;
+
+                                &:hover 
+                                {
+                                    background-color: white;
+                                    border: 0px;
+                                    color: #022c43;
+                                    font-weight: 800;
+                                }
+                             }
+                             p 
+                             {
+                                padding: 0;
+                                margin-top: 2px;
+                                // background-color: yellow;
+                                margin-top: 10px;
+                                font-family: 'Comfortaa', cursive;
+                                font-size: 11px;
+
+                             }
+
+             
+                             
+                         }
+                     }
+                   }
+                  
+               }
+         }
+        //  .flip-card:hover .flip-card-inner {
+        //      transform: rotateY(180deg);
+        //    }
+    }
+
+    ///////////////////////
+    .text-zone
+    {
+        // background-color: red;
+        
+        position: absolute;
+        top:45%;
+        transform: translateY(-50%);
+        width: 30%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 100%;
+        
+
+
+        h1 
+        {
+            font-size: 30px;
+            font-family:'Coolvetica';
+            color: white;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            // opacity: 0;
+            
+            
+        }
+        &::before 
+        {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 20px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            color: aqua;
+            line-height: 18px;
+            animation: fadeIn 2s 2s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+        }
+        &::after 
+        {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 20px;
+            position: absolute;
+            margin-top: -10px;
+            left: -30px;
+            bottom:385px;
+            margin-left: 20px;
+            opacity: 0.6;
+            color: aqua;
+            line-height: 18px;
+            animation: fadeIn 2s 2s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .para{
+            font-size: 13px;
+            color: aqua;
+            opacity: 0;
+            font-family: 'Comfortaa', cursive;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            // opacity: 0;
+        }
+
+
+        .flip-card
+        {
+            // background-color: yellow;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 350px;
+            margin-bottom: 10px;
+            
+            display: flex;
+            border: 1px solid aqua;
+            border-radius: 20px;
+            box-shadow: 5px 0 20px 0 aqua;
+            // justify-content: space-around;
+            .flip-card-inner {
+                // background-color: red;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                // text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                  }
+
+                  .flip-card-front {
+                    ul 
+                    {
+                        // background-color: blue;
+                        // justify-content: space-around;
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        margin-top: 20px;
+                        padding-left: 20px;
+                        
+            
+                        li 
+                        {
+                            list-style: none;
+                            font-family: 'Comfortaa', cursive;
+                            color: white;
+                            justify-content: space-between;
+                            font-size: 15px;
+            
+                            // font-family: 'Comic Neue', cursive;
+                            // font-family: 'Pacifico', cursive;
+                            // font-family: 'Proza Libre', sans-serif;
+                            //font-family: 'Play', sans-serif;
+                            .percent1 
+                            {
+                                position: relative;
+                                width: 75%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+            
+                            .percent2
+                            {
+                                position: relative;
+                                width: 80%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+            
+                            .percent3
+                            {
+                                position: relative;
+                                width: 35%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+            
+                            .percent4
+                            {
+                                position: relative;
+                                width: 45%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+                            .percent5
+                            {
+                                position: relative;
+                                width: 40%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+                            .percent6
+                            {
+                                position: relative;
+                                width: 10%;
+                                height: 6px;
+                                background-color: rgb(255, 255, 255);
+                                display: block;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                            }
+            
+                            
+                        }
+                    }
+                  }
+                  .flip-card-back {
+                    // background-color: dodgerblue;
+                    color: white;
+                    transform: rotateY(180deg);
+                    object-position: cover;
+                    border-radius: 20px;
+                    // background-color: yellow;
+                    align-items: center;
+
+
+                    img 
+                    {
+                        height: 300px;
+                        width: 300x;
+                        object-position: cover;
+                        object-fit: cover;
+                        border-radius: 20px;
+                        align-self: center;
+                        padding-top: 50px;
+                        
+                    }
+                  }
+              }
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+        
+        
+    }
+}
+
+    .text-animate-hover
+    {
+        &:hover
+        {
+            color: aqua;
+        }
+    }
+
+

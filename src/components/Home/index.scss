@@ -1,0 +1,82 @@
+.home-page
+{
+    .text-zone
+    {
+        position: absolute;
+        left:20%;
+        top:50%;
+        transform: translateY(-50%);
+        width: 60%;
+        max-height: 90%;
+        z-index: 10;
+        // background-color: aquamarine;
+    }
+    h2 
+    {
+        color: white;
+        font-family: 'Coolvetica';
+        letter-spacing: 1px;
+        font-weight: 400;
+        animation: fadeIn 3s 3s backwards;
+    }
+    h1 
+    {
+        color: white;
+        font-size: 40px;
+        margin:0;
+        font-family: 'Coolvetica';
+        letter-spacing: 2px;
+        font-weight: 400;
+        animation: fadeIn 1s 1s backwards;
+
+        &::before 
+        {
+            content:'<h1>';
+            font-family:'La Belle Aurore';
+            color:aqua;
+            font-size:30px;
+            position: absolute;
+            margin-top:-40px ;
+            animation: fadeIn 1s 1.5s backwards;
+            left:0px;
+            opacity: 0.6;
+        }
+        &::after
+        {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: aqua;
+            font-size:30px;
+            position: absolute;
+            margin-top:40px ;
+            margin-left: 0px;
+            animation: fadeIn 1s 1.5s backwards;
+            opacity: 0.6;
+ 
+
+        }
+    }
+    .flat-button
+    {
+        background-color: transparent;
+        color: white;
+        border-radius: 20px ;
+        padding:7px;
+        text-decoration: none;
+        font-family:'Coolvetica';
+        font-size: 15px;
+        
+        // border-color: white;
+        border: 2px solid white;
+        animation: fadeIn 3s 3s backwards;
+
+        &:hover
+        {
+            background-color: white;
+        color: #022c43;
+        }
+        
+
+    }
+
+}
