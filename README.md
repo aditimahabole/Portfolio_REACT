@@ -1,5 +1,9 @@
-# Getting Started with Create React App
+# Description
+I have meticulously crafted my professional portfolio using cutting-edge technologies. Leveraging the power of React, I've designed a dynamic and interactive user interface, while employing SCSS for a sleek and modern aesthetic. This showcase not only demonstrates my proficiency in web development but also reflects my commitment to utilizing the latest tools to create visually appealing and functionally robust applications.
+
 link : https://amporfolio.surge.sh/index
+<hr>
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
